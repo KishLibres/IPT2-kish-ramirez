@@ -74,4 +74,8 @@ Recommended actions:
 - For CI or production, do not run the dev server; the vulnerability affects local dev tools only.
 
 If you want, I can attempt to update `laravel-mix` or replace the frontend build tool in this project — tell me which you'd prefer and I'll continue.
+
+
+
+dawdwa
 s
