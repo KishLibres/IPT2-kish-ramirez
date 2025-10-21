@@ -1,0 +1,13 @@
+/* Custom app styles for the landing page */
+@import "../css/app.css";
+
+/* Provide a small set of utility overrides */
+.bg-light {
+	background-color: var(--bs-body-bg) !important;
+}
+
+.hero { /* extra spacing handled inline in blade for quick dev */ }
+
+.feature-icon { /* small visual tweaks handled inline */ }
+
+/* End of custom styles */

@@ -1,0 +1,128 @@
+/* example.scss */
+
+.home {
+  /* Make the page wrapper full width while keeping internal padding */
+  display: block;
+  padding: 2rem;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+
+  .container {
+    /* Occupy full horizontal space inside page padding */
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+      input,
+      select {
+        padding: 0.75rem 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+
+        &:focus {
+          outline: none;
+          border-color: #2563eb;
+          box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+      }
+
+      button {
+        grid-column: span 2;
+        padding: 0.85rem 1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      button[type="submit"] {
+        background: #2563eb;
+        color: #fff;
+
+        &:hover {
+          background: #1d4ed8;
+        }
+      }
+
+      .cancel-btn {
+        background: #e5e7eb;
+        color: #374151;
+
+        &:hover {
+          background: #d1d5db;
+        }
+      }
+    }
+
+    table {
+      margin-top: 2rem;
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+
+      thead {
+        background: #f3f4f6;
+
+        th {
+          text-align: left;
+          padding: 0.75rem;
+          font-weight: 600;
+          color: #374151;
+        }
+      }
+
+      tbody tr {
+        border-bottom: 1px solid #e5e7eb;
+
+        &:hover {
+          background: #f9fafb;
+        }
+
+        td {
+          padding: 0.75rem;
+          color: #374151;
+        }
+
+        .edit-btn,
+        .delete-btn {
+          padding: 0.4rem 0.75rem;
+          font-size: 0.85rem;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .edit-btn {
+          background: #fbbf24;
+          color: #fff;
+          margin-right: 0.5rem;
+
+          &:hover {
+            background: #f59e0b;
+          }
+        }
+
+        .delete-btn {
+          background: #ef4444;
+          color: #fff;
+
+          &:hover {
+            background: #dc2626;
+          }
+        }
+      }
+    }
+  }
+}

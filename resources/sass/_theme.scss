@@ -1,0 +1,59 @@
+// App theme overrides and utilities
+
+// Palette
+$brand-primary: #1d4ed8; // indigo-600
+$brand-secondary: #0ea5e9; // sky-500
+$brand-icon-bg: #eff6ff; // light indigo background
+
+// Sidebar gradient helper
+.sidebar-gradient {
+  background: linear-gradient(180deg, $brand-primary, $brand-secondary);
+}
+
+// Collapsible sidebar behavior
+body.sidebar-collapsed aside {
+  width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden;
+}
+body.sidebar-collapsed aside * { pointer-events: none; }
+body.sidebar-collapsed main { width: 100%; }
+
+aside { transition: width .2s ease; }
+
+// Top bar styling
+.topbar {
+  padding: 14px 20px;
+  background: #fff;
+}
+
+// Small icon badge used on page headers
+.icon-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: $brand-icon-bg;
+  color: $brand-primary;
+  font-size: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Status badges
+.status-badge {
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  font-size: .8rem;
+}
+.status-active {
+  background: #dcfce7; // green-100
+  color: #166534;      // green-700
+}
+.status-inactive {
+  background: #e5e7eb; // gray-200
+  color: #374151;      // gray-700
+}
+
+

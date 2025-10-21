@@ -1,0 +1,32 @@
+// Body
+$body-bg: #f6f7fb;
+$body-color: #1f2937;
+
+// Brand
+$primary: #4f46e5; // indigo-600
+$secondary: #64748b; // slate-500
+$success: #16a34a; // green-600
+$danger: #dc2626; // red-600
+$warning: #f59e0b; // amber-500
+$info: #0ea5e9; // sky-500
+
+// Typography
+$font-family-sans-serif: 'Inter', 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+$font-size-base: 1rem;
+$line-height-base: 1.7;
+
+// Radius and shadows
+$border-radius: .75rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: 1rem;
+$box-shadow: 0 .25rem .75rem rgba(2,6,23,.08);
+
+// Navbar
+$navbar-light-color: #334155;
+$navbar-light-hover-color: #0f172a;
+$navbar-light-active-color: $primary;
+
+// Buttons
+$btn-padding-y-lg: .8rem;
+$btn-padding-x-lg: 1.5rem;
+$btn-border-radius-lg: .9rem;
